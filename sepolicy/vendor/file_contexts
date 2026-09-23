@@ -28,6 +28,9 @@
 # GNSS
 /odm/bin/hw/android\.hardware\.gnss-aidl-service-qti u:object_r:vendor_hal_gnss_qti_exec:s0
 
+#GPU
+/sys/devices(/platform)?/soc/[a-f0-9]+.qcom,kgsl-3d0/kgsl/kgsl-3d0/max_gpuclk u:object_r:vendor_sysfs_kgsl_max_gpuclk:s0
+
 # IR
 /dev/ir_spi u:object_r:ir_spi_device:s0
 

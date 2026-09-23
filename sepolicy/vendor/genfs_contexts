@@ -4,6 +4,11 @@ genfscon sysfs "/csiphy_umd_paras/csiphy_umd_paras" u:object_r:sysfs_csiphy_umd_
 # Fingerprint
 genfscon sysfs "/devices/platform/soc/soc:fingerprint_goodix/wakeup" u:object_r:sysfs_wakeup:s0
 
+# GPU
+genfscon sysfs /class/kgsl/kgsl-3d0/max_gpuclk                                u:object_r:vendor_sysfs_kgsl_max_gpuclk:s0
+genfscon sysfs /devices/platform/soc/3d00000.qcom,kgsl-3d0/kgsl/kgsl-3d0/max_gpuclk u:object_r:vendor_sysfs_kgsl_max_gpuclk:s0
+genfscon sysfs /devices/platform/soc/5900000.qcom,kgsl-3d0/kgsl/kgsl-3d0/max_gpuclk u:object_r:vendor_sysfs_kgsl_max_gpuclk:s0
+
 # Perf
 genfscon proc "/perflock_records" u:object_r:vendor_proc_perflock_records:s0
 
